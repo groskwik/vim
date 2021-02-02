@@ -1,5 +1,4 @@
-" Various options -------------------------------------------------
-"
+" Various options ------------------------------------------------- "
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -203,7 +202,7 @@ nnoremap <silent> <F8> :NERDTree<CR>
 " nnoremap <silent> <F9> :ConqueTermVSplit cmd<CR>
 
 " Using diff command in windows environnment ----------------------
-set diffexpr=MyDiff()
+"set diffexpr=MyDiff() For vim prior to version 8.X
 function MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
